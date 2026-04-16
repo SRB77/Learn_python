@@ -1,5 +1,5 @@
  # ! Operators in python 
-#> 1. Arithmatic Operator 
+#* 1. Arithmatic Operator 
 num1 = 23 
 num2 = 65
 
@@ -36,3 +36,47 @@ numd = numa // numb #> This is floor division, This also helps to divide
 number1 = -39 #?There is a point if i am putting negative number it's behaving something differnt like 39%5 comes 4 so -39%5 should come -4 but it's 1
 number2 = 5 
 print(number1%number2) #>It simply perform division and return the remainder
+
+# ? How NEGATIVE number act in a modulo 
+# It simply because the python floor down towards the negative infinity and for modulo it's uses the floor division and also a formula .
+# > Formula is if a % n 
+#* a - (n * floor(a/n)) 
+
+#>  let's take the example of 39%5 and -39%5
+"""
+1>  39 % 5 
+    as per the formula : 39 - (5 * floor(39/5))
+    39 - (5 * floor(7.8))
+    39 - (5 * 7)
+    39 - 35 = 4 
+2>  -39 % 5 
+    as per the formula : 39 - (5 * floor(-39/5))
+    39 - (5 * floor(-7.8))
+    39 - (5 * (-8))
+    39 - (-40)
+    1
+    That's why this rather than -4 we get only 1 
+"""
+
+#! Power Operator (**)
+print(45 ** 56 )
+# one basic example 
+print(2**3) #> Output 8 we all know 
+
+
+#* Assignment Operators 
+""" 
+
+=	Assignment Operator	a = 7
++=	Addition Assignment	a += 1 # a = a + 1
+-=	Subtraction Assignment	a -= 3 # a = a - 3
+*=	Multiplication Assignment	a *= 4 # a = a * 4
+/=	Division Assignment	a /= 3 # a = a / 3
+%=	Remainder Assignment	a %= 10 # a = a % 10
+**=	Exponent Assignment	a **= 10 # a = a ** 10
+
+"""
+
+# https://www.programiz.com/python-programming/operators
+
+# ! Other important Dattypes are here go and learn as per the need
